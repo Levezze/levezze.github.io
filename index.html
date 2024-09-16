@@ -1,107 +1,132 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <title>Cheat Sheet</title>
-  <link rel="stylesheet" type="text/css" href="./resources/css/reset.css" />
-  <link rel="stylesheet" type="text/css" href="./resources/css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@500&SUSE:wght@700&display=swap" rel="stylesheet">
+  <title>Website Style Guide</title>
+  <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&family=SUSE:wght@500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <div class="logo-text">
-      <h1>Cheat Sheet</h1>
-      <h2>CSS Positioning</h2>
-    </div>
-  </header>
-
-  <div class="sections">
-
-    <div class="content" id="linking">
-      <h3 class="section-title">Linking CSS to HTML</h3>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Code</th>
-              <th scope="col">Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="code">&lt;link rel=<span class="input">"stylesheet"</span> type=<span class="input">"text/css"</span> href=<span class="input">"styles.css"</span> /&gt;</td>
-              <td>Placeholder</td>
-            </tr>
-          </tbody>
-        </table>
+  <div class="shadow">
+    <header>
+      <!-- Hero Section -->
+      <div class="logo">
+        <h1>Style Guide</h1>
+        <h2>[For Some Website]</h2>
       </div>
-    </div>
+        <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#colors" title="Colors Section">Colors</a></li>
+          <li><a href="#buttons" title="Buttons Section">Buttons</a></li>
+          <li><a href="#fonts" title="Fonts Section">Fonts</a></li>
+          <li><a href="#text" title="Text Styles Section">Text Styles</a></li>
+          <li><a href="#box" title="Box Models Section">Box Models</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="content" id="linking">
-      <h3 class="section-title">Size, Position, Alignment</h3>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Code</th>
-              <th scope="col">Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="code">&lt;link rel=<span class="input">"stylesheet"</span> type=<span class="input">"text/css"</span> href=<span class="input">"styles.css"</span> /&gt;</td>
-              <td>Placeholder</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <main>
+      <!-- Colors Section -->
+      <section id="colors">
+        <h3 class="section-title">Selected Colors</h3>
+        <div class="content">
+          <div class="color-box" id="davys-gray">
+            Davy's Gray | #565264
+          </div>
+          <div class="color-box" id="dim-gray">
+            Dim Gray | #706677
+          </div>
+          <div class="color-box" id="mountbatten-pink">
+            Mountbatten Pink | #a6808c
+          </div>
+          <div class="color-box" id="pale-dogwood">
+            Pale Dogwood | #ccb7ae
+          </div>
+          <div class="color-box" id="timberwolf">
+            Timberwolf | #d6cfcb
+          </div>
+        </div>
+        
+      </section>
 
-    <div class="content" id="linking">
-      <h3 class="section-title">Flex Box</h3>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Code</th>
-              <th scope="col">Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="code">&lt;link rel=<span class="input">"stylesheet"</span> type=<span class="input">"text/css"</span> href=<span class="input">"styles.css"</span> /&gt;</td>
-              <td>Placeholder</td>
-            </tr>
-            <tr></tr>
-              <td class="code">&lt;link rel=<span class="input">"stylesheet"</span> type=<span class="input">"text/css"</span> href=<span class="input">"styles.css"</span> /&gt;</td>
-              <td>Placeholder</td>
-            </tr>
-            <tr></tr>
-              <td class="code">&lt;link rel=<span class="input">"stylesheet"</span> type=<span class="input">"text/css"</span> href=<span class="input">"styles.css"</span> /&gt;</td>
-              <td>Placeholder</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    
+      <!-- Buttons Section -->
+      <section id="buttons">
+        <h3 class="section-title">Button Styling</h3>
+        <div class="content">
+          <div class="button-box" id="">
+            Color Name
+          </div>
+          <div class="button-box" id="">
+            Color Name
+          </div>
+          <div class="button-box" id="">
+            Color Name
+          </div>
+        </div>
+      </section>
+
+      <!-- Fonts Section -->
+      <section id="fonts">
+        <h3 class="section-title">Font Families</h3>
+        <div class="content">
+          <h4>First Font</h4>
+          <p class="font1 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="font1 font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="font1 font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h4>Second Font</h4>
+          <p class="font2 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="font2 font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="font2 font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h4>Third Font</h4>
+          <p class="font3 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="font3 font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="font3 font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </section>
+
+      <!-- Text Section -->
+      <section id="text">
+        <h3 class="section-title">Text Styling</h3>
+        <div class="content">
+          <h4>H1 - Main Title</h4>
+          <p class="text-style">Font Family: </p>
+          <p class="text-style">Font Size: </p>
+          <p class="text-style">Font Weight: </p>
+          <h4>H2 - Main Title</h4>
+          <p class="text-style">Font Family: </p>
+          <p class="text-style">Font Size: </p>
+          <p class="text-style">Font Weight: </p>
+          <h4>H3 - Main Title</h4>
+          <p class="text-style">Font Family: </p>
+          <p class="text-style">Font Size: </p>
+          <p class="text-style">Font Weight: </p>
+          <h4>H4 - Main Title</h4>
+          <p class="text-style">Font Family: </p>
+          <p class="text-style">Font Size: </p>
+          <p class="text-style">Font Weight: </p>
+        </div>
+      </section>
+
+      <!-- Box Models -->
+      <section id="box">
+        <h3 class="section-title">Box Model Styling</h3>
+        <div class="content boxes">
+          <h4>Model 1</h4>
+          <h4>Model 2</h4>
+          <h4>Model 3</h4>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <h5><span class="name">Lev Zhitnik</span> | Codecademy Code Challenge | 2024</h5>
+    </footer>
   </div>
-
 </body>
-
-<footer>
-  <h4><span class="name">Lev Zhitnik</span> | Codecademy Coding Challenge</h4>
-</footer>
-
-
-
-
-
-
-
-
-
-
 </html>
