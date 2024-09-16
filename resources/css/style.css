@@ -44,37 +44,12 @@ header h2 {
 nav {
   background-color: rgba(204, 183, 174, 0.9);
   margin-top: 2rem;
-  font-size: 1em;
-  font-family: "Roboto Slab", serif;
-  font-weight: 400;
-}
-
-nav ul {
   text-align: center;
 }
 
 nav li {
   display: inline;
   margin: 0 1rem;
-}
-
-nav li a {
-  padding: 0.5rem 1.2rem;
-  background-image: linear-gradient(white, rgb(214, 207, 203));
-  color: rgb(112, 102, 119);
-  text-decoration: none;
-  border-radius: 1rem;
-  transition: 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-
-nav li a:hover {
-  color: rgb(214, 207, 203);
-}
-
-nav li a:active {
-  background-image: linear-gradient(rgb(214, 207, 203), white);
-  box-shadow: inset rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 main {
@@ -87,7 +62,7 @@ main {
 }
 
 section {
-  min-width: 45rem;
+  width: 45rem;
   min-height: 30rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   margin: 2rem;
@@ -147,7 +122,6 @@ footer {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 120rem;
-  /* margin-top: 1rem; */
   display: block;
   background-color: rgb(112, 102, 119);
   padding: 1rem;
@@ -160,6 +134,35 @@ footer h5 {
   letter-spacing: 0.1em;
 }
 
+.content {
+  display: grid;
+  grid-gap: 1rem;
+  background-color: #FFF;
+  line-height: 1.2;
+}
+
 .name {
   font-weight: bold;
 }
+
+.button-box {
+  font-size: 2.5em;
+  padding: 1.5rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  background-color: #FFF;
+}
+
+
+
+h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #565264
+}
+
+p {
+  font-size: 1.1em;
+  color: #565264
+}
+

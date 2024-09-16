@@ -5,6 +5,8 @@
   <title>Website Style Guide</title>
   <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./resources/css/buttons.css">
+  <link rel="stylesheet" type="text/css" href="./resources/css/fonts.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +23,10 @@
         <!-- Navigation -->
       <nav>
         <ul>
-          <li><a href="#colors" title="Colors Section">Colors</a></li>
-          <li><a href="#buttons" title="Buttons Section">Buttons</a></li>
-          <li><a href="#fonts" title="Fonts Section">Fonts</a></li>
-          <li><a href="#text" title="Text Styles Section">Text Styles</a></li>
-          <li><a href="#box" title="Box Models Section">Box Models</a></li>
+          <li><a href="#colors" title="Colors Section" class="button-1">Colors</a></li>
+          <li><a href="#buttons" title="Buttons Section" class="button-1">Buttons</a></li>
+          <li><a href="#fonts" title="Fonts Section" class="button-1">Fonts</a></li>
+          <li><a href="#text" title="Text Styles Section" class="button-1">Text Styles</a></li>
         </ul>
       </nav>
     </header>
@@ -58,14 +59,10 @@
       <section id="buttons">
         <h3 class="section-title">Button Styling</h3>
         <div class="content">
-          <div class="button-box" id="">
-            Color Name
-          </div>
-          <div class="button-box" id="">
-            Color Name
-          </div>
-          <div class="button-box" id="">
-            Color Name
+          <div class="button-box">
+            <a href="#" class="button-1">Button #1</a>
+            <a href="#" class="button-2">Button #2</a>
+            <a href="#" class="button-3">Button #3</a>
           </div>
         </div>
       </section>
@@ -73,19 +70,25 @@
       <!-- Fonts Section -->
       <section id="fonts">
         <h3 class="section-title">Font Families</h3>
-        <div class="content">
-          <h4>First Font</h4>
-          <p class="font1 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="font1 font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="font1 font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <h4>Second Font</h4>
-          <p class="font2 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="font2 font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="font2 font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <h4>Third Font</h4>
-          <p class="font3 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="font3 font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="font3 font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="content font-boxes">
+          <div class="font-box">
+            <h4 class="font1">SUSE</h4>
+            <p class="font1 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="font1 font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="font1 font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="font-box">
+            <h4 class="font2">Inter</h4>
+            <p class="font2 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="font2 font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="font2 font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="font-box">
+            <h4 class="font3">Roboto Slab</h4>
+            <p class="font3 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="font3 font-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="font3 font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
       </section>
 
@@ -93,34 +96,33 @@
       <section id="text">
         <h3 class="section-title">Text Styling</h3>
         <div class="content">
-          <h4>H1 - Main Title</h4>
-          <p class="text-style">Font Family: </p>
-          <p class="text-style">Font Size: </p>
-          <p class="text-style">Font Weight: </p>
-          <h4>H2 - Main Title</h4>
-          <p class="text-style">Font Family: </p>
-          <p class="text-style">Font Size: </p>
-          <p class="text-style">Font Weight: </p>
-          <h4>H3 - Main Title</h4>
-          <p class="text-style">Font Family: </p>
-          <p class="text-style">Font Size: </p>
-          <p class="text-style">Font Weight: </p>
-          <h4>H4 - Main Title</h4>
-          <p class="text-style">Font Family: </p>
-          <p class="text-style">Font Size: </p>
-          <p class="text-style">Font Weight: </p>
+          <div class="text-box">
+            <h4>H1 - Main Title</h4>
+            <p class="text-style">Font Family: SUSE</p>
+            <p class="text-style">Font Size: 4.5em</p>
+            <p class="text-style">Font Weight: 600</p>
+          </div>
+          <div class="text-box">
+            <h4>H2 - Secondary Title</h4>
+            <p class="text-style">Font Family: Inter</p>
+            <p class="text-style">Font Size: 1.6em</p>
+            <p class="text-style">Font Weight: 500</p>
+          </div>
+          <div class="text-box">
+            <h4>H3 - Section Title</h4>
+            <p class="text-style">Font Family: Inter</p>
+            <p class="text-style">Font Size: 1.15em</p>
+            <p class="text-style">Font Weight: 400</p>
+          </div>
+          <div class="text-box">
+            <h4>p - Paragraphs</h4>
+            <p class="text-style">Font Family: Roboto Slab</p>
+            <p class="text-style">Font Size: 1.1em</p>
+            <p class="text-style">Font Weight: Normal</p>
+          </div>
         </div>
       </section>
 
-      <!-- Box Models -->
-      <section id="box">
-        <h3 class="section-title">Box Model Styling</h3>
-        <div class="content boxes">
-          <h4>Model 1</h4>
-          <h4>Model 2</h4>
-          <h4>Model 3</h4>
-        </div>
-      </section>
     </main>
 
     <!-- Footer -->

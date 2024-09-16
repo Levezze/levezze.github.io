@@ -1,0 +1,65 @@
+.button-1 {
+    font-size: 1em;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    padding: 0.5rem 1.2rem;
+    background-image: linear-gradient(white, rgb(214, 207, 203));
+    color: rgb(112, 102, 119);
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  
+  .button-1:hover {
+    color: rgb(214, 207, 203);
+  }
+  
+  .button-1:active {
+    background-image: linear-gradient(rgb(214, 207, 203), white);
+    box-shadow: inset rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  
+  .button-2 {
+    font-size: 1em;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    padding: 0.5rem 1.2rem;
+    background-image: linear-gradient(#706677, #565264);
+    color: #d6cfcb;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  
+  .button-2:hover {
+    color: #a6808c;
+  }
+  
+  .button-2:active {
+    background-image: linear-gradient(#565264, #706677);
+    box-shadow: inset rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  
+  .button-3 {
+    font-size: 1em;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    padding: 0.5rem 1.2rem;
+    background-image: linear-gradient(#ccb7ae, #a6808c);
+    color: #565264;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  
+  .button-3:hover {
+    color: rgb(214, 207, 203);
+  }
+  
+  .button-3:active {
+    background-image: linear-gradient(#a6808c, #ccb7ae);
+    box-shadow: inset rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
