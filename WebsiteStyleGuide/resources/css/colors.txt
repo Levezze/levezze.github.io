@@ -1,0 +1,13 @@
+/* CSS HEX */
+--davys-gray: #565264ff;
+--dim-gray: #706677ff;
+--mountbatten-pink: #a6808cff;
+--pale-dogwood: #ccb7aeff;
+--timberwolf: #d6cfcbff;
+
+/* CSS HSL */
+--davys-gray: hsla(253, 10%, 36%, 1);
+--dim-gray: hsla(275, 8%, 43%, 1);
+--mountbatten-pink: hsla(341, 18%, 58%, 1);
+--pale-dogwood: hsla(18, 23%, 74%, 1);
+--timberwolf: hsla(22, 12%, 82%, 1);

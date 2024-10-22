@@ -1,0 +1,22 @@
+.font1 {
+    font-family: "SUSE";
+    line-height: 1.3;
+}
+
+.font2 {
+    font-family: "Inter";
+    line-height: 1.3;
+}
+
+.font3 {
+    font-family: "Roboto Slab";
+    line-height: 1.3;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-italic {
+    font-style: italic;
+}
