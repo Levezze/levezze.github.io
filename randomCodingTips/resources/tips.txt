@@ -1,0 +1,144 @@
+Original Tips:
+
+<h2>HTML Tips</h2>
+
+<h3>1. Structure & Semantics</h3>
+<ul>
+  <li>Use <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;aside&gt;</code> for clear structure.</li>
+  <li>Use <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> for page or section headers and footers.</li>
+  <li>Always use semantic tags like <code>&lt;main&gt;</code> and <code>&lt;nav&gt;</code> to improve accessibility.</li>
+  <li>Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> to group images with captions.</li>
+  <li>Avoid excessive <code>&lt;div&gt;</code> usage; use semantic elements instead.</li>
+</ul>
+
+<h3>2. Forms & Inputs</h3>
+<ul>
+  <li>Use <code>&lt;label&gt;</code> for every input element for accessibility.</li>
+  <li>Use <code>required</code> and <code>pattern</code> attributes for basic form validation.</li>
+  <li>Group related inputs using <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code>.</li>
+  <li>Use <code>placeholder</code> to give hints for inputs but not as a substitute for labels.</li>
+  <li>Use appropriate input types like <code>type="email"</code> and <code>type="tel"</code>.</li>
+</ul>
+
+<h3>3. Accessibility</h3>
+<ul>
+  <li>Always include <code>alt</code> attributes for images.</li>
+  <li>Use descriptive text in links, like "Learn more about pricing" instead of "Click here."</li>
+  <li>Use <code>aria-*</code> attributes for dynamic or complex UI elements.</li>
+  <li>Ensure proper heading structure using <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc. for easy navigation.</li>
+  <li>Use keyboard-friendly features like <code>tabindex</code> and <code>accesskey</code>.</li>
+</ul>
+
+<h3>4. Media & Images</h3>
+<ul>
+  <li>Use <code>srcset</code> for responsive images that adapt to different screen sizes.</li>
+  <li>Use the <code>&lt;picture&gt;</code> element for art direction across devices.</li>
+  <li>Compress images before uploading to improve load times.</li>
+  <li>Use SVGs for icons and logos for better scalability.</li>
+  <li>Use lazy loading with <code>loading="lazy"</code> for images to improve performance.</li>
+</ul>
+
+<h3>5. Links & Navigation</h3>
+<ul>
+  <li>Use <code>&lt;nav&gt;</code> to wrap navigational links.</li>
+  <li>Use <code>rel="noopener"</code> when opening links in new tabs (<code>target="_blank"</code>).</li>
+  <li>Avoid empty links like <code>href="#"</code>; use proper targets.</li>
+  <li>Use anchor links with <code>href="#section-id"</code> for smooth scrolling to sections.</li>
+  <li>Use breadcrumbs for easier site navigation.</li>
+</ul>
+
+
+<h2>CSS Tips</h2>
+
+<h3>1. Layout & Positioning</h3>
+<ul>
+  <li>Use Flexbox for one-dimensional layouts (rows/columns).</li>
+  <li>Use Grid for complex two-dimensional layouts.</li>
+  <li>Use <code>position: sticky;</code> for headers that stick when scrolling.</li>
+  <li>Avoid using <code>float</code> for layout; use Flexbox or Grid instead.</li>
+  <li>Use <code>min-width</code> and <code>max-width</code> for responsive design.</li>
+</ul>
+
+<h3>2. Responsive Design</h3>
+<ul>
+  <li>Use <code>@media</code> queries for adapting layouts to different screen sizes.</li>
+  <li>Use <code>rem</code> and <code>em</code> units for scalable typography and spacing.</li>
+  <li>Use <code>vh</code> and <code>vw</code> for full-screen elements that adjust with window size.</li>
+  <li>Avoid fixed widths; use percentages for fluid designs.</li>
+  <li>Test responsiveness on both mobile and desktop.</li>
+</ul>
+
+<h3>3. Typography</h3>
+<ul>
+  <li>Use <code>line-height</code> for better readability, typically around 1.5.</li>
+  <li>Use font-family fallback stacks like <code>Arial, sans-serif</code>.</li>
+  <li>Avoid too many font sizes; keep a consistent typographic hierarchy.</li>
+  <li>Use <code>text-transform</code> for automatic capitalization.</li>
+  <li>Use web fonts efficiently, loading only necessary weights and styles.</li>
+</ul>
+
+<h3>4. Animations & Transitions</h3>
+<ul>
+  <li>Use <code>transition</code> for smooth state changes (hover, focus).</li>
+  <li>Use <code>@keyframes</code> to create custom animations.</li>
+  <li>Limit animation duration to avoid sluggish performance.</li>
+  <li>Use <code>will-change</code> to optimize animation performance.</li>
+  <li>Animate only <code>opacity</code> and <code>transform</code> for better rendering performance.</li>
+</ul>
+
+<h3>5. Colors & Gradients</h3>
+<ul>
+  <li>Use <code>rgba()</code> for colors with transparency.</li>
+  <li>Use CSS variables like <code>--primary-color</code> for easier theme management.</li>
+  <li>Use gradients sparingly; too many can overwhelm the design.</li>
+  <li>Use <code>background-blend-mode</code> for blending background images and colors.</li>
+  <li>Ensure sufficient contrast between text and background for readability.</li>
+</ul>
+
+
+<h2>JavaScript Tips</h2>
+
+<h3>1. DOM Manipulation</h3>
+<ul>
+  <li>Use <code>document.querySelector</code> to grab elements efficiently.</li>
+  <li>Avoid direct manipulation of the DOM too often; use <code>document fragments</code> for better performance.</li>
+  <li>Use <code>event delegation</code> to handle events more efficiently.</li>
+  <li>Always <code>removeEventListener</code> when you no longer need an event listener.</li>
+  <li>Use <code>innerHTML</code> with caution to avoid security risks like XSS.</li>
+</ul>
+
+<h3>2. Functions & Variables</h3>
+<ul>
+  <li>Use <code>let</code> and <code>const</code> instead of <code>var</code> to avoid scope issues.</li>
+  <li>Write small, single-purpose functions for maintainability.</li>
+  <li>Use arrow functions (<code>=></code>) for concise syntax and to avoid <code>this</code> binding issues.</li>
+  <li>Use default parameters to simplify function calls.</li>
+  <li>Use template literals (<code>`Hello, ${name}`</code>) instead of string concatenation.</li>
+</ul>
+
+<h3>3. Asynchronous Code</h3>
+<ul>
+  <li>Use <code>async/await</code> for cleaner asynchronous code.</li>
+  <li>Handle promise rejections with <code>.catch()</code> or <code>try-catch</code> blocks.</li>
+  <li>Use <code>Promise.all</code> to handle multiple asynchronous tasks in parallel.</li>
+  <li>Use <code>fetch()</code> instead of <code>XMLHttpRequest</code> for easier network requests.</li>
+  <li>Avoid callback hell by chaining promises or using <code>async/await</code>.</li>
+</ul>
+
+<h3>4. Error Handling</h3>
+<ul>
+  <li>Use <code>try-catch</code> for handling errors in asynchronous code.</li>
+  <li>Throw custom errors for more informative error messages.</li>
+  <li>Log errors properly using <code>console.error()</code> for better debugging.</li>
+  <li>Use <code>finally</code> in promises to handle cleanup actions.</li>
+  <li>Avoid swallowing errors silently by always handling them.</li>
+</ul>
+
+<h3>5. Performance Optimization</h3>
+<ul>
+  <li>Minimize DOM manipulation by updating it in batches.</li>
+  <li>Use <code>debounce</code> or <code>throttle</code> for functions triggered by user input (e.g., scroll or resize).</li>
+  <li>Avoid memory leaks by cleaning up event listeners and DOM references.</li>
+  <li>Use <code>requestAnimationFrame</code> for smoother animations.</li>
+  <li>Lazy load heavy resources, like images and scripts, to improve performance.</li>
+</ul>
