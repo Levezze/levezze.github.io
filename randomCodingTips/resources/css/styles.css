@@ -52,8 +52,9 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     gap: 3rem;
-    height: 25rem;
+    min-height: 20rem;
 }
 
 /* Button */
@@ -68,7 +69,7 @@ button {
   cursor: pointer;
   display: inline-block;
   font-family: din-round,sans-serif;
-  font-size: 15px;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: .8px;
   line-height: 20px;
@@ -85,8 +86,8 @@ button {
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: 15rem;
-  height: 4rem;
+  width: 18rem;
+  height: 4.5rem;
 }
 
 button:after {
@@ -123,6 +124,13 @@ button:active {
   background: none;
 }
 
+@media only screen and (max-width: 500px) {
+    button {
+        font-size: 0.9rem;
+        width: 15rem;
+        height: 4rem;
+    }
+}
 /* Tip */
 .tip {
     margin: 0 auto;
