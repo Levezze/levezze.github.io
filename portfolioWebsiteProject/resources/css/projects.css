@@ -1,0 +1,96 @@
+/* Projects */
+
+#club-responsive {
+    background-image: url("../projects/club-responsive/img/levezze.github.io_ResponsiveClubWebsite_.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  @media only screen and (orientation: portrait) {
+    #club-responsive {
+      background-image: url("../projects/club-responsive/img/levezze.github.io_ResponsiveClubWebsite\ -\ landscape.png");
+    }
+  }
+  
+  #company-flex {
+    background-image: url("../projects/company-flex/img/landscape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  @media only screen and (orientation: portrait) {
+    #company-flex {
+      background-image: url("../projects/company-flex/img/portrait.png");
+    }
+  }
+  
+  #cties {
+    background-image: url("../projects/cties/img/overall-zone-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  #dystopia-now {
+    background-image: url("../projects/dystopia-now/vid/dystopia-preview.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  #facial-emotion {
+    background-image: url("../projects/facial-emotion-recognition/img/complex-models-thumbnail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  #final-project {
+    background-image: url("../projects/final-project/img/final-project-florentine2049.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  @media only screen and (orientation: portrait) {
+    #final-project {
+      background-image: url("../projects/final-project/img/final-project-concept.png");
+      background-size: cover;
+    }
+  }
+  
+  #n2y {
+    background-image: url("../projects/n2y/img/n2y-iso-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  #python-todo {
+    background-image: url("../projects/python-todo/img/todo-list.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  #coding-tips {
+    background-image: url("../projects/random-coding-tips/img/levezze.github.io_randomCodingTips_.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  #sde-dov {
+    background-image: url("../projects/sde-dov/sde-dov-gif.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  @media only screen and (orientation: portrait) {
+    #sde-dov {
+      background-size: contain;
+    }
+  }
