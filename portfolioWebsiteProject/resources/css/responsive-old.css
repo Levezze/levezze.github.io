@@ -1,0 +1,203 @@
+/* Sidebar & Menu */
+
+@media only screen and (orientation: portrait) {
+  .sidebar {
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 10;
+  }
+  
+  #logo {
+    margin: 0 20px;
+    writing-mode: horizontal-tb;
+    transform: scale(1);
+  }
+  
+  @keyframes menu {
+    to {
+      transform: scale(1) translateY(-2px);
+      opacity: 0.8;
+    }
+  }
+  
+  @keyframes menu-reverse {
+    from {
+      transform: scale(1) translateY(-2px);
+      opacity: 0.8;
+    }
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  #menu {
+    flex-direction: row;
+    gap: 40px;
+    margin: 0 20px;
+  }
+  
+  .menu-item {
+    writing-mode: horizontal-tb;
+    transform: scale(1);
+  }
+  
+  /* Main Margin */
+  
+  main {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+  .main-display {
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .main-display-item {
+    height: calc(50vh - 25px);
+    padding: 3% 3%;
+  }
+  
+  #main-text h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+  
+  #main-text {
+    padding: 1rem;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  #main-img {
+    background-image: url("../projects/final-project/img/final-project-concept.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .scroll-container {
+    padding-top: 50px;
+  }
+
+  .grid-container {
+      /* padding: 0; */
+      height: calc(100vh - 50px - 20px);
+      grid-template: repeat(3, calc(31vh - 20px)) / repeat(4, calc(31vh - 20px));
+      grid-auto-columns: calc(31vh - 20px);
+      grid-auto-rows: calc(31vh - 20px);
+  }
+  
+  p.grid-item-title {
+  font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 1500px), (max-height: 1000px) {
+  .about-credentials a {
+      max-width: 80px;
+  }
+  
+  #my-photo {
+      max-height: 200px;
+      margin-right: 60px;
+  }
+}
+  
+@media only screen and (max-width: 1200px), (max-height: 1000px) {
+  .about-credentials a {
+      max-width: 60px;
+  }
+  
+  #about {
+      margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1500px), (max-height: 1000px) {
+  .skill-icon-item {
+    max-width: 40px;
+    max-width: 40px;
+  }
+}
+
+@media only screen and (max-width: 1200px), (max-height: 800px) {
+  .skill-icon-item {
+    max-width: 30px;
+  }
+}
+
+@media only screen and (max-width: 1100px), (max-height: 1000px), (orientation: portrait) {
+  #about {
+    padding-top: 50px;
+    margin-bottom: 0;
+    height: 100vh;
+  }
+  
+  #skills {
+    height: calc(100vh - 50px);
+    padding-top: 50px;
+    margin-bottom: 0;
+    min-height: 100vh;
+    padding: 0 3%;
+  }
+
+  .about-container {
+    height: calc(95vh - 52px);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .skills-container {
+    height: calc(95vh - 52px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-item {
+    max-width: 90vh;
+    display: flex;
+    gap: 20px;
+  }
+
+  .skill-icon-flex {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #contact {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (orientation: portrait) {
+  .skills-grid {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .about-flex {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 3%;
+  }
+}

@@ -8,14 +8,15 @@
     <title>Levezze Portfolio</title>
     <!-- Links -->
     <link rel="stylesheet" href="./resources/css/styles.css">
+    <link rel="stylesheet" href="./resources/css/responsive.css">
     <link rel="stylesheet" href="./resources/css/projects.css">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <!-- Load Scripts -->
+    <script src="./resources/js/projectData.js"></script>
     <script src="./resources/js/scroll.js" async></script>
-    <script src="./resources/js/projectsGrid.js" async></script>
+    <script src="./resources/js/projectsGrid.js" defer></script>
     <script src="./resources/js/about.js" async></script>
     <script src="./resources/js/menu.js" async></script>
-    <script src="./resources/js/projectData.js" async></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
     <!-- Header -->
     <header>
       <div class="sidebar">
-        <h1 id="logo"><a href="#display-project">Levezze</a></h1>
+        <a href="#display-project" id="logo"><h1>Levezze</h1></a>
         <nav id="menu">
           <a href="#projects" class="menu-item">Projects</a>
           <a href="#about" class="menu-item">About</a>
@@ -36,87 +37,93 @@
           <a href="#contact" class="menu-item">Contact</a>
         </nav>
       </div>
-      
     </header>
 
     <!-- Main -->
+
     <main>
+
+      <!-- Main Display Area -->
+
       <section id="display-project">
-        <div class="container projects">
-          <!-- Main Display Area -->
+        <div class="projects">
           <div class="main-display">
+
             <!-- Main Image -->
             <div id="main-img" class="main-display-item">
             </div>
+            
             <!-- Main Content -->
             <div id="main-content" class="main-display-item">
               <div id="main-text">
                 <h2>Project Full Name</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit omnis incidunt asperiores vero! Quod omnis unde voluptatibus rerum voluptates labore, repellat culpa quibusdam? Nulla quae corporis omnis repellendus nostrum!
-                  <br><br>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, suscipit accusamus aperiam, vero iusto nihil enim libero voluptate incidunt distinctio cupiditate repudiandae minus repellat repellendus. Neque esse error tempore pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis distinctio quis eveniet natus magni nemo deleniti a ex aliquid velit? Explicabo sunt enim vero eius accusantium harum quibusdam iure soluta!
-                  <br><br>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat voluptas deleniti ducimus enim neque amet id! Ea itaque expedita nisi suscipit perspiciatis ratione, aperiam exercitationem beatae, vitae magnam asperiores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ipsam dolorem velit iusto minima fugit a perferendis nemo, itaque eveniet quisquam sint delectus quibusdam sunt. Mollitia eaque unde suscipit nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere exercitationem non nulla deleniti qui impedit commodi dolore. Molestiae, officiis dolore fuga unde harum distinctio obcaecati ad dolor, blanditiis eum numquam.
-                  <br><br>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorum iste minima in? Sequi impedit ea placeat iste reiciendis earum deleniti enim dicta sed facilis, et inventore possimus sunt ipsum!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- <div>
-            <h2 class="title">Projects</h2>
-          </div> -->
-          <!-- Projects Grid -->
-          <div class="scroll-container" id="drag">
-            <div id="projects" class="grid-container"> <!-- class="flex-container" -->
-              <div class="grid-item">
-                <p class="grid-item-title">Responsive Club Website</p>
-                <a href="#display-project" class="grid-item-project" id="club-responsive"></a>
-              </div>
-              <div class="grid-item">
-                <p class="grid-item-title">Flexbox Company Website</p>
-                <a href="#display-project" class="grid-item-project" id="company-flex"></a>
-              </div>
-              <div class="grid-item">
-                <p class="grid-item-title">Random Coding Tips Generator</p>
-                <a href="#display-project" class="grid-item-project" id="coding-tips"></a>
-              </div>
-              <div class="grid-item">
-                <p class="grid-item-title">Python To-Do list</p>
-                <a href="#display-project" class="grid-item-project" id="python-todo"></a>
-              </div>
-              <div class="grid-item">
-                <p class="grid-item-title">Deep Learning Facial Emotion Detector</p>
-                <a href="#display-project" class="grid-item-project" id="facial-emotion"></a>
-              </div>
-              <div class="grid-item">
-                <p class="grid-item-title">Data-Driven Generative Urban Planning Automation</p>
-                <a href="#display-project" class="grid-item-project" id="cties"></a>
-              </div>
-              <div class="grid-item">
-                <p class="grid-item-title">Sde-Dov, Israel's First Generative Urban Plan</p>
-                <a href="#display-project" class="grid-item-project" id="sde-dov"></a>
-              </div>
-              <div class="grid-item">
-                <p class="grid-item-title">B.Arch Final Project Presentation</p>
-                <a href="#display-project" class="grid-item-project" id="final-project"></a>
-              </div>
-              <div class="grid-item">
-                <p class="grid-item-title">N2Y, NYC Computational Design Urban Intervention</p>
-                <a href="#display-project" class="grid-item-project" id="n2y"></a>
-              </div>
-              <div class="grid-item">
-                <p class="grid-item-title">Dystopia Now, Short Movie</p>
-                <a href="#display-project" class="grid-item-project" id="dystopia-now"></a>
+                <div id="project-summary">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit omnis incidunt asperiores vero! Quod omnis unde voluptatibus rerum voluptates labore, repellat culpa quibusdam? Nulla quae corporis omnis repellendus nostrum!
+                    <br><br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, suscipit accusamus aperiam, vero iusto nihil enim libero voluptate incidunt distinctio cupiditate repudiandae minus repellat repellendus. Neque esse error tempore pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis distinctio quis eveniet natus magni nemo deleniti a ex aliquid velit? Explicabo sunt enim vero eius accusantium harum quibusdam iure soluta!
+                    <br><br>
+                    Lorem ipsum <a href="#">asfasg</a> sit amet, consectetur adipisicing elit. Exercitationem repellat voluptas deleniti ducimus enim neque amet id! Ea itaque expedita nisi suscipit perspiciatis ratione, aperiam exercitationem beatae, vitae magnam asperiores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ipsam dolorem velit iusto minima fugit a perferendis nemo, itaque eveniet quisquam sint delectus quibusdam sunt. Mollitia eaque unde suscipit nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere exercitationem non nulla deleniti qui impedit commodi dolore. Molestiae, officiis dolore fuga unde harum distinctio obcaecati ad dolor, blanditiis eum numquam.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- About -->
-      <section id="about">
+      <!-- Projects Grid -->
+
+      <section id="projects">
+        <div class="scroll-container" id="scroll-container">
+          <div class="grid-container">
+            <div class="grid-item">
+              <a href="#" class="grid-item-project" id="club-responsive"></a>
+              <p class="grid-item-title">Responsive Club Website</p>
+            </div>
+            <div class="grid-item">
+              <a href="#" class="grid-item-project" id="company-flex"></a>
+              <p class="grid-item-title">Flexbox Company Website</p>
+            </div>
+            <div class="grid-item">
+              <a href="#" class="grid-item-project" id="coding-tips"></a>
+              <p class="grid-item-title">Random Coding Tips Generator</p>
+            </div>
+            <div class="grid-item">
+              <a href="#" class="grid-item-project" id="python-todo"></a>
+              <p class="grid-item-title">Python To-Do list</p>
+            </div>
+            <div class="grid-item">
+              <a href="#" class="grid-item-project" id="facial-emotion"></a>
+              <p class="grid-item-title">Deep Learning Facial Emotion Detector</p>
+            </div>
+            <div class="grid-item">
+              <a href="#" class="grid-item-project" id="cties"></a>
+              <p class="grid-item-title">Data-Driven Generative Urban Planning Automation</p>
+            </div>
+            <div class="grid-item">
+              <a href="#" class="grid-item-project" id="sde-dov"></a>
+              <p class="grid-item-title">Sde-Dov, Israel's First Generative Urban Plan</p>
+            </div>
+            <div class="grid-item">
+              <a href="#" class="grid-item-project" id="final-project"></a>
+              <p class="grid-item-title">B.Arch Final Project Presentation</p>
+            </div>
+            <div class="grid-item">
+              <a href="#" class="grid-item-project" id="n2y"></a>
+              <p class="grid-item-title">N2Y, NYC Computational Design Urban Intervention</p>
+            </div>
+            <div class="grid-item">
+              <a href="#" class="grid-item-project" id="dystopia-now"></a>
+              <p class="grid-item-title">Dystopia Now, Short Movie</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+
+      <section id="about" class="full-flex">
         <h2 class="title">About Me</h2>
         <div class="about-container">
           <div class="about-flex">
@@ -137,10 +144,12 @@
       </section>
 
       <!-- Skills -->
-      <section id="skills">
+
+      <section id="skills" class="full-flex">
         <h2 class="title">Professional Skills</h2>
         <div class="skills-container">
-          <div class="skills-grid container">
+          <div class="skills-grid">
+
             <!-- Programming Skills -->
             <div class="skills-item programming">
               <div class="skill-text">
@@ -242,17 +251,21 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact">
-        <div class="container contact-form">
-          <h2 class="title">Contact Me</h2>
-          <!-- <form action="POST" class=""> -->
 
-          </form>
+      <section id="contact" class="full-flex">
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-container">
+          <div class="contact-form">
+            <form action="POST" class="">
+              form
+            </form>
+          </div>        
         </div>
       </section>
     </main>
 
     <!-- Footer -->
+
     <footer>
       <div></div>
       <h4>© Lev Zhitnik. All rights reserved.</h4>
