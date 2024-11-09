@@ -290,15 +290,16 @@ p.grid-item-title {
 .skills-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin: auto 0;
+  overflow: auto;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6vw;
-  justify-items: center;
+  justify-items: start;
 }
 
 .skills-item {
@@ -323,6 +324,7 @@ p.grid-item-title {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  min-height: 3vw;
 }
 
 .skill-icon-item {
@@ -351,6 +353,51 @@ p.grid-item-title {
 #contact h2 {
   color: white;
   border-bottom: 1px solid white;
+}
+
+/* Contact Form */
+.contact-form {
+  padding: 20px;
+  border-radius: 2px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Serif", sans-serif;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  color: #1c1c1c;
+}
+
+.form-group textarea {
+  height: 20vh;
+  resize: none;
+}
+
+.submit-form {
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-form:hover {
+  background-color: #218838;
 }
 
 /* Footer */

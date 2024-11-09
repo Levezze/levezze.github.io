@@ -53,6 +53,9 @@ const mainDisplay = document.getElementsByClassName("main-display")[0]
 const mainText = document.getElementById("main-text")
 const nodes = mainText.childNodes;
 
+// Form Button
+const formButton = document.getElementById("submit-button");
+
 // Change Main Display Function
 const changeDisplay = (index) => {
   const projectId = projectAnchors[index].getAttribute("id");
@@ -73,6 +76,9 @@ const changeDisplay = (index) => {
   mainDisplay.style.backgroundColor = projectIdData["color-1"];
   mainText.style.borderBottom = `1px solid ${projectIdData["color-3"]}`;
   mainText.style.borderTop = `1px solid ${projectIdData["color-3"]}`;
+  formButton.style.backgroundColor = projectIdData["color-1"];
+  formButton.style.border = `1px solid ${projectIdData["color-3"]}`;
+  formButton.style.color = projectIdData["color-2"];
 
   // Styling per node
   nodes.forEach(node => {

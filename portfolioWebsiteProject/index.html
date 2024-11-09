@@ -17,6 +17,8 @@
     <script src="./resources/js/projectsGrid.js" defer></script>
     <script src="./resources/js/about.js" async></script>
     <script src="./resources/js/menu.js" async></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js" async></script>
+    <script src="./resources/js/email.js" async></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -154,7 +156,14 @@
             <div class="skills-item programming">
               <div class="skill-text">
                 <h3>Full Stack & Programming</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum eum vel, neque dolorem quibusdam sapiente sit, laudantium optio impedit tempore facere aperiam, vero reprehenderit numquam officiis magnam repellat nesciunt a.</p>                
+                <p>
+                  A full-stack developer with a solid foundation in JavaScript and React, specializing in building dynamic, 
+                  responsive web applications. Proficient in React’s component-based architecture, hooks, state management, 
+                  and modern ES6+ syntax. Experienced with back-end development using Node.js and Express, 
+                  as well as RESTful APIs and database integration. Background in Python adds versatility across development 
+                  environments. Strong understanding of client and server-side optimization ensures smooth user experiences 
+                  across platforms.
+                </p>
               </div>
               <div class="skill-icon-flex">
                 <div class="skill-icon-item" id="skill-bash">
@@ -197,7 +206,11 @@
             <div class="skills-item computation">
               <div class="skill-text">
                 <h3>Architecture & Computation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium fugit corrupti praesentium unde ad dolor, eveniet earum illo asperiores ut eos quasi, provident beatae dolores ipsum temporibus reprehenderit iste! Placeat!</p>
+                <p>
+                  My architecture career began with a focus on computational urban planning and data-driven design. 
+                  I later joined the founding team of a Smart Cities startup, where I specialized in generative design, 
+                  AI, and data analysis, developing expertise in programming with specialized libraries and environments.
+                </p>
               </div>
               <div class="skill-icon-flex">
                 <div class="skill-icon-item">
@@ -225,23 +238,27 @@
             <div class="skills-item design">
               <div class="skill-text">
                 <h3>Graphics & Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo animi totam, nulla quis odio quidem aliquam placeat, possimus voluptas atque molestiae, adipisci quae sapiente eligendi facere nostrum? Nostrum, cum ipsum.</p>
+                <p>
+                  Since age 13, I’ve been involved in diverse graphic design projects, focusing mainly on web design. 
+                  My Architecture degree honed my design skills with a strong emphasis on personal style and presentation. 
+                  Along the way, I also explored video editing, 3D modeling in Blender, and basic animation, expanding my creative toolkit.
+                </p>
               </div>
               <div class="skill-icon-flex">
                 <div class="skill-icon-item">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" alt="Photoshop" title="Photoshop" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" alt="Photoshop" title="Adobe Photoshop" />
                 </div>
                 <div class="skill-icon-item">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" alt="Illustrator" title="Illustrator" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" alt="Illustrator" title="Adobe Illustrator" />
                 </div>
                 <div class="skill-icon-item">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg" alt="XD" title="XD" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg" alt="XD" title="Adobe XD" />
                 </div>
                 <div class="skill-icon-item">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/premierepro/premierepro-original.svg" alt="Premiere Pro" title="Premiere Pro" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/premierepro/premierepro-original.svg" alt="Premiere Pro" title="Adobe Premiere Pro" />
                 </div>
                 <div class="skill-icon-item">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" alt="Blender" title="Blender" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" alt="Blender" title="Adobe Blender" />
                 </div>
               </div>
             </div>
@@ -255,11 +272,22 @@
       <section id="contact" class="full-flex">
         <h2 class="title">Contact Me</h2>
         <div class="contact-container">
-          <div class="contact-form">
-            <form action="POST" class="">
-              form
-            </form>
-          </div>        
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>  
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>  
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required placeholder="Enter message here..."></textarea> 
+            </div>
+            <button type="submit" class="submit-form" id="submit-button">Send</button>
+          </form>
+            
         </div>
       </section>
     </main>

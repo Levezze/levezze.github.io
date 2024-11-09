@@ -154,6 +154,11 @@
     height: auto;
   }
 
+  /* Contact Form */
+
+  .contact-form {
+    width: 75vw;
+  }
   /* Footer */
 
   body footer {
@@ -179,6 +184,7 @@
     max-width: 85vw;
     gap: 20px;
     min-height: 22vh;
+    margin-bottom: 5px;
   }
 
   .skill-icon-item {
@@ -195,7 +201,6 @@
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
     gap: 6vh;
-    max-height: 80vh;
     overflow: auto;
   }
 
@@ -207,11 +212,12 @@
   }
   
   .skills-item .skill-text {
-    max-width: 75vw;
+    max-width: 100vw;
   }
 
   .skill-icon-flex {
     margin-top: 0;
+    /* height: 15vh; */
   }
 
   .skill-icon-item {
@@ -324,7 +330,7 @@
   }
 }
 
-@media only screen and (min-aspect-ratio: 2/1), (orientation: landscape) and (max-height: 400px) {
+@media only screen and (min-aspect-ratio: 2/1) and (max-height: 800px), (orientation: landscape) and (max-height: 400px) {
 
   /* Main Display */
 
@@ -351,11 +357,6 @@
   .about-credentials {
     margin-top: 3vh;
   }
-
-  /* .about-credentials a img {
-    max-width: 10vh;
-    height: auto;
-  } */
 }
 
 @media only screen and (orientation: portrait) and (max-width: 450px) {

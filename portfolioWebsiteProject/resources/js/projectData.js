@@ -101,7 +101,7 @@ const projectData = {
     "color-1": "#3da18d",
     "color-2": "#363636",
     "color-3": "#e7eaed",
-    "title": "Applied Data Science Program",
+    "title": "MIT-PE, Applied Data Science Program",
     "text": `
     <p>
       Completed the MIT Professional Education Applied Data Science Program with a capstone project on 
@@ -129,10 +129,10 @@ const projectData = {
     "color-1": "#58798e",
     "color-2": "#162d41",
     "color-3": "#b0ddf9",
-    "title": "Title",
+    "title": "C-Ties - Founding Team Tech Lead",
     "text": `
     <p>
-
+      *Temporary text*
     </p>
     `
   },
@@ -140,10 +140,10 @@ const projectData = {
     "color-1": "#ffffff",
     "color-2": "#010101",
     "color-3": "#424242",
-    "title": "Title",
+    "title": "Sde-Dov, Israel's First Generative Urban Master Plan",
     "text": `
     <p>
-
+      *Temporary text*
     </p>
     `
   },
@@ -151,10 +151,10 @@ const projectData = {
     "color-1": "#1c1c1c",
     "color-2": "#b81817",
     "color-3": "#ffffff",
-    "title": "Title",
+    "title": "B.Arch Final Project Presentation",
     "text": `
     <p>
-
+      *Temporary text*
     </p>
     `
   },
@@ -162,10 +162,10 @@ const projectData = {
     "color-1": "#ffffff",
     "color-2": "#19b591",
     "color-3": "#231f20",
-    "title": "Title",
+    "title": "N2Y, Reimagining the NYC Grid",
     "text": `
     <p>
-
+      *Temporary text*
     </p>
     `
   },
@@ -173,10 +173,10 @@ const projectData = {
     "color-1": "#000000",
     "color-2": "#aaaaaa",
     "color-3": "#ffffff",
-    "title": "Title",
+    "title": "Dystopia Now, Short Movie",
     "text": `
     <p>
-
+      *Temporary text*
     </p>
     `
   }
